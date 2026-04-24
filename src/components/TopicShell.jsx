@@ -14,7 +14,7 @@ const TABS = [
   { key: 'numerical',  label: 'Numericals',  icon: Calculator },
 ]
 
-export default function TopicShell({ topicId, title, subtitle, emoji, tabs }) {
+export default function TopicShell({ topicId, title, subtitle, emoji, tabs, backTo = '/redox', backLabel = 'Back to Redox' }) {
   const [active, setActive] = useState('concept')
   const [pct, setPct] = useState(0)
 
@@ -30,7 +30,7 @@ export default function TopicShell({ topicId, title, subtitle, emoji, tabs }) {
   return (
     <div>
       <div className="flex items-center justify-between mb-4">
-        <Link to="/redox" className="btn-ghost text-sm"><ArrowLeft size={16}/> Back to Redox</Link>
+        <Link to={backTo} className="btn-ghost text-sm"><ArrowLeft size={16}/> {backLabel}</Link>
         <div className="w-40"><ProgressBar value={pct} label="Progress" /></div>
       </div>
 
