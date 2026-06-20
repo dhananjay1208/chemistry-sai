@@ -6,6 +6,7 @@ import OxidationNumber from './pages/topics/OxidationNumber.jsx'
 import StockNotation from './pages/topics/StockNotation.jsx'
 import BalancingRedox from './pages/topics/BalancingRedox.jsx'
 import EquivalentMass from './pages/topics/EquivalentMass.jsx'
+import RedoxStoichiometry from './pages/topics/RedoxStoichiometry.jsx'
 import ChapterEquilibrium from './pages/ChapterEquilibrium.jsx'
 import IonicEquilibrium from './pages/topics/IonicEquilibrium.jsx'
 import PhDetermination from './pages/topics/PhDetermination.jsx'
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/redox/stock-notation" element={<StockNotation />} />
         <Route path="/redox/balancing" element={<BalancingRedox />} />
         <Route path="/redox/equivalent-mass" element={<EquivalentMass />} />
+        <Route path="/redox/stoichiometry" element={<RedoxStoichiometry />} />
         <Route path="/equilibrium" element={<ChapterEquilibrium />} />
         <Route path="/equilibrium/ionic" element={<IonicEquilibrium />} />
         <Route path="/equilibrium/ph" element={<PhDetermination />} />

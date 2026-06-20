@@ -82,8 +82,22 @@ function Concept() {
 }
 
 function Visualize() {
-  const [step, setStep] = useState(0)
-  const steps = [
+  const [method, setMethod] = useState('on') // 'on' | 'half'
+  const [stepOn, setStepOn] = useState(0)
+  const [stepHalf, setStepHalf] = useState(0)
+
+  const onSteps = [
+    { t: 'Target (a real exam question)', text: '10 FeC₂O₄ + x KMnO₄ + 24 H₂SO₄ → 5 Fe₂(SO₄)₃ + 20 CO₂ + y MnSO₄ + 3 K₂SO₄ + 24 H₂O. Find x and y.' },
+    { t: 'Step 1 — O.N. of atoms that change', text: 'Fe: +2 → +3   |   C (in C₂O₄²⁻): +3 → +4   |   Mn: +7 → +2' },
+    { t: 'Step 2 — change per atom', text: 'Fe goes up by 1.  Each C goes up by 1 (and there are 2 C).  Mn goes down by 5.' },
+    { t: 'Step 3 — n-factor (e⁻ per formula unit)', text: 'FeC₂O₄ loses 1 (Fe) + 2 (two C) = 3 e⁻.   KMnO₄ gains 5 e⁻.' },
+    { t: 'Step 4 — total electrons lost', text: '10 FeC₂O₄ × 3 e⁻ = 30 electrons lost in all.' },
+    { t: 'Step 5 — find x', text: 'Each KMnO₄ takes 5 e⁻, so x = 30 ÷ 5 = 6.' },
+    { t: 'Step 6 — find y', text: 'Manganese is conserved, so y = x = 6.' },
+    { t: 'Done', text: 'x = 6 , y = 6 ✅' },
+  ]
+
+  const halfSteps = [
     { t: 'Target', text: 'Balance:  MnO₄⁻ + Fe²⁺ → Mn²⁺ + Fe³⁺  (acidic medium)' },
     { t: 'Step 1 — Split into half-reactions', text: 'Oxidation: Fe²⁺ → Fe³⁺  |  Reduction: MnO₄⁻ → Mn²⁺' },
     { t: 'Step 2 — Balance atoms (not O/H yet)', text: 'Fe²⁺ → Fe³⁺  ✓  (Mn already balanced)' },
@@ -94,23 +108,44 @@ function Visualize() {
     { t: 'Step 7 — Add halves', text: 'MnO₄⁻ + 5 Fe²⁺ + 8 H⁺ → Mn²⁺ + 5 Fe³⁺ + 4 H₂O ✅' },
   ]
 
+  const isOn = method === 'on'
+  const steps = isOn ? onSteps : halfSteps
+  const step = isOn ? stepOn : stepHalf
+  const setStep = isOn ? setStepOn : setStepHalf
   const curr = steps[step]
+
+  const TabBtn = ({ id, children }) => (
+    <button
+      onClick={() => setMethod(id)}
+      className={`px-3 py-1.5 rounded-lg text-sm font-semibold transition ${
+        method === id ? 'bg-brand-600 text-white shadow-soft' : 'text-slate-600 hover:bg-white'
+      }`}
+    >
+      {children}
+    </button>
+  )
+
   return (
     <div className="card p-6">
       <h2 className="text-xl font-extrabold text-slate-900">Interactive Balancer — Step by Step</h2>
-      <p className="text-sm text-slate-600 mt-1">Follow along as we balance MnO₄⁻ / Fe²⁺ one step at a time.</p>
+      <p className="text-sm text-slate-600 mt-1">Pick a method and follow it one step at a time.</p>
 
-      <div className="mt-5 rounded-2xl bg-gradient-to-br from-brand-50 to-pink-50 p-6 border border-brand-100 min-h-[200px]">
+      <div className="mt-3 inline-flex gap-1 rounded-xl border border-slate-200 p-1 bg-slate-50">
+        <TabBtn id="on">Oxidation-number method</TabBtn>
+        <TabBtn id="half">Half-reaction method</TabBtn>
+      </div>
+
+      <div className="mt-4 rounded-2xl bg-gradient-to-br from-brand-50 to-pink-50 p-6 border border-brand-100 min-h-[200px]">
         <AnimatePresence mode="wait">
           <motion.div
-            key={step}
+            key={method + step}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.3 }}
           >
             <div className="text-xs font-bold text-brand-700 uppercase tracking-wider">{curr.t}</div>
-            <div className="mt-3 text-xl sm:text-2xl font-mono text-slate-900 break-words">{curr.text}</div>
+            <div className="mt-3 text-lg sm:text-2xl font-mono text-slate-900 break-words">{curr.text}</div>
           </motion.div>
         </AnimatePresence>
       </div>

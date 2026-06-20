@@ -46,6 +46,16 @@ const topics = [
     path: '/redox/equivalent-mass',
     tags: ['Numericals', 'Titration'],
   },
+  {
+    id: 'stoichiometry',
+    num: '05',
+    emoji: '🧮',
+    title: 'Redox Stoichiometry & Mole Concept',
+    subtitle: 'The equivalents bridge, mole ratios, electron counting & forming reactions to solve numericals.',
+    color: 'from-rose-500 to-pink-500',
+    path: '/redox/stoichiometry',
+    tags: ['High weight', 'Numericals'],
+  },
 ]
 
 export default function ChapterRedox() {
@@ -65,12 +75,13 @@ export default function ChapterRedox() {
         <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1">Redox Reactions</h1>
         <p className="text-slate-600 mt-3 max-w-2xl">
           Every time something burns, rusts, rots, or even when your body digests food — <strong>redox</strong> is happening.
-          In this chapter we'll master the 4 core tools: reading <em>oxidation numbers</em>, writing <em>stock notation</em>,
-          <em> balancing</em> any redox equation, and finding <em>equivalent mass</em> for titrations.
+          In this chapter we'll master the core tools: reading <em>oxidation numbers</em>, writing <em>stock notation</em>,
+          <em> balancing</em> any redox equation, finding <em>equivalent mass</em>, and tying it all together with
+          <em> stoichiometry &amp; the mole concept</em> for numericals.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           <span className="chip bg-violet-100 text-violet-700">NEET weight: High</span>
-          <span className="chip bg-emerald-100 text-emerald-700">4 topics</span>
+          <span className="chip bg-emerald-100 text-emerald-700">5 topics</span>
           <span className="chip bg-pink-100 text-pink-700">≈ 4–6 marks expected</span>
         </div>
       </div>

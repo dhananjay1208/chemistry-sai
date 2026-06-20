@@ -71,6 +71,60 @@ export const mcqs = [
     answer: 1,
     explain: 'Comproportionation is the reverse of disproportionation: two different O.N.s of the same element combine to one intermediate O.N.'
   },
+  {
+    q: '<b>[Paper]</b> Which of the following is <b>neither</b> oxidation nor reduction?',
+    options: ['Na → NaOH', 'Cl<sub>2</sub> → Cl<sup>−</sup> + ClO<sub>3</sub><sup>−</sup>', 'P<sub>2</sub>O<sub>5</sub> → H<sub>4</sub>P<sub>2</sub>O<sub>7</sub>', 'Zn + H<sub>2</sub>SO<sub>4</sub> → ZnSO<sub>4</sub> + H<sub>2</sub>'],
+    answer: 2,
+    explain: 'In P₂O₅ → H₄P₂O₇, P stays +5 throughout (just hydration). The others all involve a change in oxidation number.'
+  },
+  {
+    q: '<b>[Paper]</b> Which of these represents a redox reaction?',
+    options: ['NaOH + HCl → NaCl + H<sub>2</sub>O', 'BaCl<sub>2</sub> + H<sub>2</sub>SO<sub>4</sub> → BaSO<sub>4</sub> + 2 HCl', 'CuSO<sub>4</sub> + 2 H<sub>2</sub>O → Cu(OH)<sub>2</sub> + H<sub>2</sub>SO<sub>4</sub>', 'Zn + 2 HCl → ZnCl<sub>2</sub> + H<sub>2</sub>'],
+    answer: 3,
+    explain: 'Only Zn + 2 HCl changes oxidation numbers: Zn 0 → +2 (oxidised) and H +1 → 0 (reduced). The others are acid–base, precipitation or hydrolysis.'
+  },
+  {
+    q: '<b>[Paper]</b> Which reaction depicts the <b>oxidising</b> property of SO<sub>2</sub>?',
+    options: ['SO<sub>2</sub> + H<sub>2</sub>O → H<sub>2</sub>SO<sub>3</sub>', '2 H<sub>2</sub>S + SO<sub>2</sub> → 3 S + 2 H<sub>2</sub>O', 'Cl<sub>2</sub> + SO<sub>2</sub> → SO<sub>2</sub>Cl<sub>2</sub>', '2 MnO<sub>4</sub><sup>−</sup> + 5 SO<sub>2</sub> + 2 H<sub>2</sub>O → 5 SO<sub>4</sub><sup>2−</sup> + 2 Mn<sup>2+</sup> + 4 H<sup>+</sup>'],
+    answer: 1,
+    explain: 'SO₂ is an oxidiser only when its S (+4) is reduced. In 2 H₂S + SO₂ → 3 S, S goes +4 → 0 (reduced), so SO₂ oxidises H₂S. In the others S is oxidised to +6, so SO₂ is a reducing agent there.'
+  },
+  {
+    q: '<b>[Paper]</b> The oxide which <b>cannot</b> act as a reducing agent is:',
+    options: ['SO<sub>2</sub>', 'NO<sub>2</sub>', 'CO<sub>2</sub>', 'ClO<sub>2</sub>'],
+    answer: 2,
+    explain: 'A reducing agent must be able to lose more electrons. In CO₂ carbon is already at +4, its maximum, so it cannot be oxidised further ⇒ cannot reduce anything. S(+4), N(+4), Cl(+4) can all go higher.'
+  },
+  {
+    q: '<b>[Paper]</b> Which species can act as <b>both</b> an oxidising and a reducing agent?',
+    options: ['H<sub>2</sub>', 'I<sub>2</sub>', 'H<sub>2</sub>O<sub>2</sub>', 'All of these'],
+    answer: 3,
+    explain: 'Each has an intermediate oxidation state, so it can go up or down: H (0→±1), I (0→ −1 or +5), O in H₂O₂ (−1 → 0 or −2). So all three can do both.'
+  },
+  {
+    q: '<b>[Paper]</b> Which of the following is <b>NOT</b> an intramolecular redox reaction?',
+    options: ['(NH<sub>4</sub>)<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> → N<sub>2</sub> + Cr<sub>2</sub>O<sub>3</sub> + 4 H<sub>2</sub>O', '2 KClO<sub>3</sub> → 2 KCl + 3 O<sub>2</sub>', '2 Mn<sub>2</sub>O<sub>7</sub> → 4 MnO<sub>2</sub> + 3 O<sub>2</sub>', '2 ClO<sub>2</sub> + 5 H<sub>2</sub>O<sub>2</sub> → 2 Cl<sup>−</sup> + 5 O<sub>2</sub> + 6 H<sub>2</sub>O (in OH<sup>−</sup>)'],
+    answer: 3,
+    explain: 'Intramolecular redox = oxidation and reduction on different atoms of the SAME compound. The last one has two different reactant compounds (ClO₂ is reduced, H₂O₂ is oxidised) ⇒ it is intermolecular, not intramolecular.'
+  },
+  {
+    q: '<b>[Paper]</b> 10 FeC<sub>2</sub>O<sub>4</sub> + x KMnO<sub>4</sub> + 24 H<sub>2</sub>SO<sub>4</sub> → 5 Fe<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub> + 20 CO<sub>2</sub> + y MnSO<sub>4</sub> + 3 K<sub>2</sub>SO<sub>4</sub> + 24 H<sub>2</sub>O. The values of x and y are:',
+    options: ['6, 3', '3, 6', '3, 3', '6, 6'],
+    answer: 3,
+    explain: 'FeC₂O₄ gives 3 e⁻ each (Fe 1 + 2 C ×1). 10 × 3 = 30 e⁻ lost. KMnO₄ takes 5 e⁻ ⇒ x = 30/5 = 6. Mn is conserved ⇒ y = 6.'
+  },
+  {
+    q: '<b>[Paper]</b> For IO<sub>3</sub><sup>−</sup> + a I<sup>−</sup> + b H<sup>+</sup> → c H<sub>2</sub>O + d I<sub>2</sub>, the values of a, b, c, d are:',
+    options: ['5, 6, 3, 3', '5, 3, 6, 3', '3, 5, 3, 6', '6, 5, 5, 3'],
+    answer: 0,
+    explain: 'IO₃⁻: I +5→0 gains 5 e⁻; I⁻: −1→0 loses 1 e⁻ ⇒ 5 I⁻ per IO₃⁻ (a = 5). Total I = 1 + 5 = 6 → 3 I₂ (d = 3). O: 3 → 3 H₂O (c = 3). H: 6 H⁺ (b = 6).'
+  },
+  {
+    q: '<b>[Paper]</b> For 5 H<sub>2</sub>O<sub>2</sub> + x ClO<sub>2</sub> + 2 OH<sup>−</sup> → x Cl<sup>−</sup> + y O<sub>2</sub> + 6 H<sub>2</sub>O, the reaction is balanced when:',
+    options: ['x = 5, y = 2', 'x = 2, y = 5', 'x = 4, y = 10', 'x = 5, y = 5'],
+    answer: 1,
+    explain: 'ClO₂: Cl +4 → −1 gains 5 e⁻; H₂O₂: gives 2 e⁻ each ⇒ 5 H₂O₂ give 10 e⁻, so x = 10/5 = 2. Balancing O then gives y = 5.'
+  },
 ]
 
 export const pyqs = [
@@ -107,8 +161,8 @@ export const pyqs = [
   {
     q: '<b>[NEET 2022]</b> How many grams of KMnO₄ are needed to make 500 mL of a 0.1 N solution in acidic medium?',
     options: ['3.16 g', '1.58 g', '0.316 g', '15.8 g'],
-    answer: 0,
-    explain: 'Eq. mass = 158/5 = 31.6. Eq. needed = N × V = 0.1 × 0.5 = 0.05. Mass = 0.05 × 31.6 = 1.58 g. (Answer B — double-check option mapping.)'
+    answer: 1,
+    explain: 'Eq. mass = 158/5 = 31.6. Equivalents needed = N × V = 0.1 × 0.5 = 0.05. Mass = 0.05 × 31.6 = 1.58 g.'
   },
   {
     q: '<b>[NEET 2020]</b> Identify the disproportionation reaction:',
@@ -182,5 +236,42 @@ export const numericals = [
       '2 HNO₃ + 3 H₂S → 2 NO + 3 S + 4 H₂O ✓',
     ],
     answer: '2 HNO<sub>3</sub> + 3 H<sub>2</sub>S → 2 NO + 3 S + 4 H<sub>2</sub>O'
+  },
+  {
+    q: 'Oxidation-number method: find x and y in 10 FeC<sub>2</sub>O<sub>4</sub> + x KMnO<sub>4</sub> + 24 H<sub>2</sub>SO<sub>4</sub> → 5 Fe<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub> + 20 CO<sub>2</sub> + y MnSO<sub>4</sub> + 3 K<sub>2</sub>SO<sub>4</sub> + 24 H<sub>2</sub>O.',
+    tag: 'Paper set · O.N. method',
+    steps: [
+      'Spot the changes: Fe²⁺ → Fe³⁺ (up 1); each C in C₂O₄²⁻: +3 → +4 (up 1, and there are 2 C); Mn: +7 → +2 (down 5).',
+      'n-factor of FeC₂O₄ = 1 (Fe) + 2 (two C) = 3 electrons lost per unit.',
+      'Electrons lost by 10 FeC₂O₄ = 10 × 3 = 30.',
+      'Each KMnO₄ gains 5 electrons, so x = 30 ÷ 5 = 6.',
+      'Manganese is conserved across the equation, so y = x = 6.',
+    ],
+    answer: 'x = 6, y = 6'
+  },
+  {
+    q: 'Balance in basic medium: Zn + NO<sub>3</sub><sup>−</sup> → Zn<sup>2+</sup> + NH<sub>4</sub><sup>+</sup>, and give the coefficients of Zn, NO<sub>3</sub><sup>−</sup> and OH<sup>−</sup>.',
+    tag: 'Paper set · basic medium',
+    steps: [
+      'Changes: Zn 0 → +2 (loses 2 e⁻); N +5 → −3 (gains 8 e⁻).',
+      'Balance electrons (LCM 8): 4 Zn lose 8 e⁻ for every 1 N that gains 8 e⁻.',
+      'Reduction half in base: NO₃⁻ + 7 H₂O + 8 e⁻ → NH₄⁺ + 10 OH⁻.',
+      'Oxidation half: 4 Zn → 4 Zn²⁺ + 8 e⁻.',
+      'Add: 4 Zn + NO₃⁻ + 7 H₂O → 4 Zn²⁺ + NH₄⁺ + 10 OH⁻.',
+      'Check charge: LHS −1; RHS 4(+2) + 1 + 10(−1) = −1 ✔.',
+    ],
+    answer: 'Zn = 4, NO<sub>3</sub><sup>−</sup> = 1, OH<sup>−</sup> = 10'
+  },
+  {
+    q: 'Balance (O.N. method): IO<sub>3</sub><sup>−</sup> + I<sup>−</sup> + H<sup>+</sup> → I<sub>2</sub> + H<sub>2</sub>O.',
+    tag: 'Paper set · comproportionation',
+    steps: [
+      'IO₃⁻: I goes +5 → 0, gains 5 e⁻. I⁻: I goes −1 → 0, loses 1 e⁻.',
+      'Electron balance: 1 IO₃⁻ (5 e⁻ in) needs 5 I⁻ (5 e⁻ out).',
+      'Total I atoms = 1 + 5 = 6 → forms 3 I₂.',
+      'Oxygen: 3 O from IO₃⁻ → 3 H₂O. Hydrogen: needs 6 H⁺.',
+      'Check charge: −1 + 5(−1) + 6(+1) = 0 = neutral products ✔.',
+    ],
+    answer: 'IO<sub>3</sub><sup>−</sup> + 5 I<sup>−</sup> + 6 H<sup>+</sup> → 3 I<sub>2</sub> + 3 H<sub>2</sub>O'
   },
 ]

@@ -57,12 +57,12 @@ export default function Home() {
               <div>
                 <div className="text-xs font-bold text-brand-600 uppercase tracking-wider">Chapter 1</div>
                 <div className="text-xl font-extrabold text-slate-900 mt-1">Redox Reactions</div>
-                <div className="text-sm text-slate-600 mt-2">Oxidation Number · Stock Notation · Balancing · Equivalent Mass</div>
+                <div className="text-sm text-slate-600 mt-2">Oxidation Number · Stock Notation · Balancing · Equivalent Mass · Stoichiometry</div>
               </div>
               <div className="text-4xl group-hover:rotate-12 transition">⚛️</div>
             </div>
             <div className="mt-4 flex gap-2">
-              <span className="chip bg-emerald-100 text-emerald-700">4 topics</span>
+              <span className="chip bg-emerald-100 text-emerald-700">5 topics</span>
               <span className="chip bg-amber-100 text-amber-700">High NEET weight</span>
             </div>
           </Link>
