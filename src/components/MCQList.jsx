@@ -30,17 +30,22 @@ export default function MCQList({ questions, title = 'Quick Check MCQs', accent 
       {questions.map((q, qi) => {
         const picked = answers[qi]
         const shown = revealed[qi]
+        const isPaper = /\[Paper/i.test(q.q)
+        const displayQ = q.q.replace(/^\s*<b>\[Paper[^\]]*\]<\/b>\s*/i, '')
         return (
           <motion.div
             key={qi}
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: qi * 0.03 }}
-            className="card p-5"
+            className={`card p-5 ${isPaper ? 'ring-2 ring-amber-400 bg-amber-50/40' : ''}`}
           >
+            {isPaper && (
+              <div className="mb-2"><span className="chip bg-amber-200 text-amber-900">📄 From your question paper</span></div>
+            )}
             <div className="flex items-start gap-3 mb-3">
               <span className="shrink-0 w-7 h-7 rounded-lg bg-brand-100 text-brand-700 font-bold flex items-center justify-center text-sm">Q{qi+1}</span>
-              <div className="font-semibold text-slate-900" dangerouslySetInnerHTML={{ __html: q.q }} />
+              <div className="font-semibold text-slate-900" dangerouslySetInnerHTML={{ __html: displayQ }} />
             </div>
             <div className="grid sm:grid-cols-2 gap-2 pl-10">
               {q.options.map((opt, ci) => {
