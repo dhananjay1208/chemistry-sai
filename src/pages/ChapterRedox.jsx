@@ -86,6 +86,20 @@ export default function ChapterRedox() {
         </div>
       </div>
 
+      <Link to="/redox/paper" className="card p-5 sm:p-6 mb-6 block bg-gradient-to-br from-amber-50 to-white border-amber-200 hover:-translate-y-0.5 transition group">
+        <div className="flex items-center justify-between gap-4">
+          <div className="flex items-center gap-4">
+            <div className="text-4xl">📄</div>
+            <div>
+              <div className="text-xs font-bold text-amber-700 uppercase tracking-wider">Your question paper</div>
+              <div className="text-xl font-extrabold text-slate-900">My Paper — Solved</div>
+              <div className="text-sm text-slate-600 mt-0.5">All 53 questions from your paper, solved step-by-step, in one place.</div>
+            </div>
+          </div>
+          <ArrowRight className="text-amber-500 group-hover:translate-x-1 transition shrink-0" size={22}/>
+        </div>
+      </Link>
+
       <div className="grid sm:grid-cols-2 gap-4">
         {topics.map((t, i) => (
           <motion.div key={t.id} initial={{opacity:0,y:10}} animate={{opacity:1,y:0}} transition={{delay:i*0.06}}>
