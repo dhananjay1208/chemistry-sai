@@ -71,6 +71,54 @@ export const mcqs = [
     answer: 1,
     explain: 'Normality = Molarity × valency factor (n-factor).'
   },
+  {
+    q: '<b>[Paper]</b> In FeS<sub>2</sub> + KMnO<sub>4</sub> + H<sup>+</sup> → Fe<sup>3+</sup> + SO<sub>2</sub> + Mn<sup>2+</sup> + H<sub>2</sub>O, the equivalent mass of FeS<sub>2</sub> equals:',
+    options: ['molar mass', 'molar mass / 10', 'molar mass / 11', 'molar mass / 13'],
+    answer: 2,
+    explain: 'In FeS₂, Fe = +2 and each S = −1. Fe²⁺→Fe³⁺ gives 1 e⁻; each S(−1)→S(+4 in SO₂) gives 5 e⁻ ×2 = 10. n = 1 + 10 = 11 ⇒ eq mass = M/11.'
+  },
+  {
+    q: '<b>[Paper]</b> For As<sub>2</sub>S<sub>3</sub> + H<sup>+</sup> + NO<sub>3</sub><sup>−</sup> → NO + H<sub>2</sub>O + AsO<sub>4</sub><sup>3−</sup> + SO<sub>4</sub><sup>2−</sup>, the equivalent weight of As<sub>2</sub>S<sub>3</sub> in terms of molar mass M is:',
+    options: ['M/2', 'M/4', 'M/28', 'M/24'],
+    answer: 2,
+    explain: 'As: +3 → +5 (2 e⁻ each × 2 As = 4). S: −2 → +6 (8 e⁻ each × 3 S = 24). n = 4 + 24 = 28 ⇒ eq wt = M/28.'
+  },
+  {
+    q: '<b>[Paper]</b> Equivalent mass of Cl<sub>2</sub> in 3 Cl<sub>2</sub> + 6 NaOH → 5 NaCl + NaClO<sub>3</sub> + 3 H<sub>2</sub>O is: (Cl<sub>2</sub> = 71)',
+    options: ['42.6', '35.5', '59.1', '71'],
+    answer: 0,
+    explain: 'Disproportionation: of 6 Cl atoms, 5 go 0→−1 (gain 5 e⁻) and 1 goes 0→+5 (lose 5 e⁻). Total electrons = 5. Eq mass = total mass / electrons = (3×71)/5 = 42.6.'
+  },
+  {
+    q: '<b>[Paper]</b> When N<sub>2</sub> is converted into NH<sub>3</sub>, the equivalent weight of nitrogen is:',
+    options: ['1.67', '2.67', '3.67', '4.67'],
+    answer: 3,
+    explain: 'N: 0 → −3, so n = 3. Eq wt = atomic mass / n = 14/3 = 4.67.'
+  },
+  {
+    q: '<b>[Paper]</b> From 2 KBrO<sub>3</sub> + 12 H<sup>+</sup> + 10 e<sup>−</sup> → Br<sub>2</sub> + 6 H<sub>2</sub>O + 2 K<sup>+</sup>, the equivalent weight of KBrO<sub>3</sub> (molar mass M) is:',
+    options: ['M/5', 'M/2', 'M/6', 'M/4'],
+    answer: 0,
+    explain: '10 electrons are shared by 2 KBrO₃ ⇒ 5 e⁻ per KBrO₃ (Br +5 → 0). So n = 5 and eq wt = M/5.'
+  },
+  {
+    q: '<b>[Paper]</b> Equivalent mass of IO<sub>4</sub><sup>−</sup> when it is converted to I<sub>2</sub> in acidic medium (molar mass M) is:',
+    options: ['M/6', 'M/7', 'M/5', 'M/4'],
+    answer: 1,
+    explain: 'I in IO₄⁻ is +7, going to 0 in I₂ ⇒ n = 7. Eq mass = M/7.'
+  },
+  {
+    q: '<b>[Paper]</b> If 1.2 g of a metal displaces 1.12 litre of hydrogen at NTP, the equivalent weight of the metal is:',
+    options: ['24', '12', '1.2 ÷ 11.2', '1.2 × 11.2'],
+    answer: 1,
+    explain: '11.2 L of H₂ at NTP = 1 equivalent, so 1.12 L = 0.1 equivalent. Equivalents of metal = 0.1. Eq wt = mass/equiv = 1.2/0.1 = 12.'
+  },
+  {
+    q: '<b>[Paper]</b> x g of a metal gave y g of its oxide. The equivalent weight of the metal is:',
+    options: ['[(y − x)/x] × 8', '[x/(y − x)] × 8', '(x/y) × 8', '[(x + y)/x] × 8'],
+    answer: 1,
+    explain: 'Mass of oxygen combined = (y − x). Equivalents of metal = equivalents of oxygen = (y − x)/8. Eq wt of metal = mass/equiv = x ÷ [(y − x)/8] = [x/(y − x)] × 8.'
+  },
 ]
 
 export const pyqs = [
@@ -170,5 +218,63 @@ export const numericals = [
       'Eq mass = 144 / 3 = 48',
     ],
     answer: '48'
+  },
+  {
+    q: 'Find the equivalent mass of FeS<sub>2</sub> in: FeS<sub>2</sub> + KMnO<sub>4</sub> + H<sup>+</sup> → Fe<sup>3+</sup> + SO<sub>2</sub> + Mn<sup>2+</sup> + H<sub>2</sub>O.',
+    tag: 'Paper set · multi-atom n-factor',
+    steps: [
+      'Assign O.N. in FeS₂: Fe = +2, each S = −1 (pyrite).',
+      'Fe²⁺ → Fe³⁺: loses 1 e⁻.',
+      'Each S(−1) → S(+4) in SO₂: loses 5 e⁻; with 2 S that is 10 e⁻.',
+      'Total n-factor = 1 + 10 = 11.',
+      'Equivalent mass = M / 11.',
+    ],
+    answer: 'M / 11'
+  },
+  {
+    q: 'Find the equivalent weight of As<sub>2</sub>S<sub>3</sub> in: As<sub>2</sub>S<sub>3</sub> + H<sup>+</sup> + NO<sub>3</sub><sup>−</sup> → NO + H<sub>2</sub>O + AsO<sub>4</sub><sup>3−</sup> + SO<sub>4</sub><sup>2−</sup>.',
+    tag: 'Paper set · multi-atom n-factor',
+    steps: [
+      'In As₂S₃: As = +3, S = −2.',
+      'As: +3 → +5 (in AsO₄³⁻): 2 e⁻ each × 2 As = 4 e⁻.',
+      'S: −2 → +6 (in SO₄²⁻): 8 e⁻ each × 3 S = 24 e⁻.',
+      'Total n-factor = 4 + 24 = 28.',
+      'Equivalent weight = M / 28.',
+    ],
+    answer: 'M / 28'
+  },
+  {
+    q: 'Find the equivalent mass of Cl<sub>2</sub> in the disproportionation 3 Cl<sub>2</sub> + 6 NaOH → 5 NaCl + NaClO<sub>3</sub> + 3 H<sub>2</sub>O. (Cl<sub>2</sub> = 71)',
+    tag: 'Paper set · disproportionation',
+    steps: [
+      'There are 6 Cl atoms in 3 Cl₂, all starting at 0.',
+      '5 atoms become Cl⁻ (0 → −1): gain 5 e⁻ in total.',
+      '1 atom becomes ClO₃⁻ (0 → +5): loses 5 e⁻.',
+      'Total electrons exchanged = 5.',
+      'Equivalent mass = total mass ÷ electrons = (3 × 71) / 5 = 213/5.',
+    ],
+    answer: '42.6'
+  },
+  {
+    q: '1.2 g of a metal displaces 1.12 L of H<sub>2</sub> at NTP. Find the equivalent weight of the metal.',
+    tag: 'Paper set · hydrogen displacement',
+    steps: [
+      '11.2 L of H₂ at NTP = 1 equivalent of hydrogen.',
+      'So 1.12 L = 1.12 / 11.2 = 0.1 equivalent.',
+      'Equivalents of metal = equivalents of H₂ = 0.1.',
+      'Equivalent weight = mass / equivalents = 1.2 / 0.1 = 12.',
+    ],
+    answer: '12'
+  },
+  {
+    q: 'x g of a metal gives y g of its oxide. Derive the equivalent weight of the metal.',
+    tag: 'Paper set · oxide method',
+    steps: [
+      'Mass of oxygen that combined = (y − x) g.',
+      'Equivalent weight of oxygen = 8, so equivalents of oxygen = (y − x)/8.',
+      'Equivalents of metal = equivalents of oxygen = (y − x)/8.',
+      'Equivalent weight of metal = mass / equivalents = x ÷ [(y − x)/8].',
+    ],
+    answer: '[x / (y − x)] × 8'
   },
 ]

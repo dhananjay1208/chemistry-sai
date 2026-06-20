@@ -92,6 +92,60 @@ export const mcqs = [
     answer: 1,
     explain: 'H with a metal (ionic hydride) is –1. Na is +1, so Na + H = 0 ⇒ H = –1.'
   },
+  {
+    q: '<b>[Paper]</b> The oxidation number of S in (CH<sub>3</sub>)<sub>2</sub>SO (DMSO) is:',
+    options: ['+1', '+2', '0', '+3'],
+    answer: 2,
+    explain: 'Think of (CH₃)₂S first: S bonded to 2 C is like S in H₂S, so S = –2. The extra S=O bond oxidises S by +2. Net = –2 + 2 = <b>0</b>.'
+  },
+  {
+    q: '<b>[Paper]</b> The oxidation number of S in H<sub>2</sub>S<sub>2</sub>O<sub>8</sub> (peroxydisulphuric acid) is:',
+    options: ['+2', '+4', '+6', '+7'],
+    answer: 2,
+    explain: 'It contains a peroxide (O–O) linkage. With 2 peroxide O (–1 each) and 6 normal O (–2): 2(+1) + 2S + 6(–2) + 2(–1) = 0 ⇒ S = <b>+6</b> (the +7 answer is the trap that ignores the peroxide bond).'
+  },
+  {
+    q: '<b>[Paper]</b> The oxidation number of S in K<sub>2</sub>S<sub>2</sub>O<sub>8</sub> (peroxydisulphate) is:',
+    options: ['+2', '+4', '+7', '+6'],
+    answer: 3,
+    explain: 'Same peroxide linkage as H₂S₂O₈. 2(+1) + 2S + 6(–2) + 2(–1) = 0 ⇒ S = <b>+6</b>.'
+  },
+  {
+    q: '<b>[Paper]</b> Among the underlined atoms, which has the <b>least</b> oxidation number: <u>Ni</u>(CN)<sub>4</sub>, <u>Ni</u>(CO)<sub>4</sub>, <u>Fe</u><sub>2</sub>O<sub>3</sub>, <u>S</u>F<sub>6</sub>?',
+    options: ['Ni in Ni(CN)<sub>4</sub>', 'Ni in Ni(CO)<sub>4</sub>', 'Fe in Fe<sub>2</sub>O<sub>3</sub>', 'S in SF<sub>6</sub>'],
+    answer: 1,
+    explain: 'Ni(CN)₄: Ni = +4. Ni(CO)₄: CO is neutral ⇒ Ni = <b>0</b> (least). Fe₂O₃: Fe = +3. SF₆: S = +6.'
+  },
+  {
+    q: '<b>[Paper]</b> The oxidation states of S in SO<sub>3</sub><sup>2−</sup>, S<sub>2</sub>O<sub>4</sub><sup>2−</sup> and S<sub>2</sub>O<sub>6</sub><sup>2−</sup> follow the order:',
+    options: ['S<sub>2</sub>O<sub>4</sub><sup>2−</sup> &lt; SO<sub>3</sub><sup>2−</sup> &lt; S<sub>2</sub>O<sub>6</sub><sup>2−</sup>', 'SO<sub>3</sub><sup>2−</sup> &lt; S<sub>2</sub>O<sub>4</sub><sup>2−</sup> &lt; S<sub>2</sub>O<sub>6</sub><sup>2−</sup>', 'S<sub>2</sub>O<sub>4</sub><sup>2−</sup> &lt; S<sub>2</sub>O<sub>6</sub><sup>2−</sup> &lt; SO<sub>3</sub><sup>2−</sup>', 'S<sub>2</sub>O<sub>6</sub><sup>2−</sup> &lt; S<sub>2</sub>O<sub>4</sub><sup>2−</sup> &lt; SO<sub>3</sub><sup>2−</sup>'],
+    answer: 0,
+    explain: 'SO₃²⁻: S = +4. S₂O₄²⁻: S = +3. S₂O₆²⁻: S = +5. Increasing order: +3 &lt; +4 &lt; +5 ⇒ S₂O₄²⁻ &lt; SO₃²⁻ &lt; S₂O₆²⁻.'
+  },
+  {
+    q: '<b>[Paper]</b> Increasing order of oxidation number of S in S<sub>8</sub>, S<sub>2</sub>O<sub>8</sub><sup>2−</sup>, S<sub>2</sub>O<sub>3</sub><sup>2−</sup>, S<sub>4</sub>O<sub>6</sub><sup>2−</sup>:',
+    options: ['S<sub>8</sub> &lt; S<sub>2</sub>O<sub>8</sub><sup>2−</sup> &lt; S<sub>2</sub>O<sub>3</sub><sup>2−</sup> &lt; S<sub>4</sub>O<sub>6</sub><sup>2−</sup>', 'S<sub>2</sub>O<sub>8</sub><sup>2−</sup> &lt; S<sub>2</sub>O<sub>3</sub><sup>2−</sup> &lt; S<sub>4</sub>O<sub>6</sub><sup>2−</sup> &lt; S<sub>8</sub>', 'S<sub>2</sub>O<sub>8</sub><sup>2−</sup> &lt; S<sub>8</sub> &lt; S<sub>4</sub>O<sub>6</sub><sup>2−</sup> &lt; S<sub>2</sub>O<sub>3</sub><sup>2−</sup>', 'S<sub>8</sub> &lt; S<sub>2</sub>O<sub>3</sub><sup>2−</sup> &lt; S<sub>4</sub>O<sub>6</sub><sup>2−</sup> &lt; S<sub>2</sub>O<sub>8</sub><sup>2−</sup>'],
+    answer: 3,
+    explain: 'S₈ = 0; S₂O₃²⁻ = +2; S₄O₆²⁻ = +2.5; S₂O₈²⁻ = +6. So 0 &lt; +2 &lt; +2.5 &lt; +6.'
+  },
+  {
+    q: '<b>[Paper]</b> When K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> is converted to K<sub>2</sub>CrO<sub>4</sub>, the change in the oxidation state of chromium is:',
+    options: ['0', '6', '4', '3'],
+    answer: 0,
+    explain: 'Cr is +6 in both K₂Cr₂O₇ and K₂CrO₄. So the change is <b>0</b> — this is not a redox change, just a structural one (dichromate ⇌ chromate).'
+  },
+  {
+    q: '<b>[Paper]</b> In hydrazoic acid H–N=N=N (HN<sub>3</sub>), the oxidation numbers of the three nitrogen atoms are:',
+    options: ['0, 0, +3', '0, 0, –1', '+1, +1, –3', '–3, –3, –3'],
+    answer: 1,
+    explain: 'N–N bonds are split equally (0). The N bonded to H gets –1; the other two N are 0. Sum = –1, which balances H(+1). So <b>0, 0, –1</b>.'
+  },
+  {
+    q: '<b>[Paper]</b> In CH<sub>2</sub>=CCl<sub>2</sub>, the oxidation numbers of the two carbon atoms (CH<sub>2</sub> carbon, CCl<sub>2</sub> carbon) are:',
+    options: ['–2, +2', '–2, –2', '+2, +2', '+2, –4'],
+    answer: 0,
+    explain: 'CH₂ carbon: 2 H give –2 (C=C is split equally, 0) ⇒ <b>–2</b>. CCl₂ carbon: 2 Cl give +2 ⇒ <b>+2</b>.'
+  },
 ]
 
 export const pyqs = [
@@ -221,6 +275,50 @@ export const numericals = [
     ],
     answer: 'Os = +8'
   },
+  {
+    q: 'Find the oxidation number of S in (CH<sub>3</sub>)<sub>2</sub>SO (dimethyl sulfoxide).',
+    tag: 'Paper set · tricky',
+    steps: [
+      'First look at dimethyl sulfide (CH₃)₂S. Here S is bonded only to 2 carbons.',
+      'S is (just) more electronegative than C, so each S–C bond gives S an electron — like S in H₂S ⇒ S = –2.',
+      'Now add the extra oxygen: the S=O bond shifts 2 electrons to O, raising S by +2.',
+      'Net: S = –2 (from the carbons) + 2 (from oxygen) = 0.',
+    ],
+    answer: 'S = 0'
+  },
+  {
+    q: 'Find the oxidation number of S in H<sub>2</sub>S<sub>2</sub>O<sub>8</sub> (peroxydisulphuric acid) — watch for the peroxide trap.',
+    tag: 'Paper set · peroxide trap',
+    steps: [
+      'Structure is HO₃S–O–O–SO₃H: two of the eight oxygens form a peroxide (O–O) link.',
+      'Peroxide O = –1 each (2 of them); the other 6 O = –2 each; H = +1.',
+      '2(+1) + 2S + 6(–2) + 2(–1) = 0',
+      '2 + 2S – 12 – 2 = 0 ⇒ 2S = 12 ⇒ S = +6.',
+      'If you forget the peroxide link you wrongly get +7 — that is the distractor.',
+    ],
+    answer: 'S = +6'
+  },
+  {
+    q: 'Find the oxidation number of each N in hydrazoic acid HN<sub>3</sub> (H–N=N=N).',
+    tag: 'Paper set · structure-based',
+    steps: [
+      'Bonds between identical atoms (N–N) are split equally, so they add 0 to oxidation number.',
+      'N bonded to H: H is less electronegative, so this N gains 1 electron ⇒ –1.',
+      'The other two N atoms have only N–N bonds ⇒ 0 each.',
+      'Check: (–1) + 0 + 0 = –1, which balances the H at +1. ✔',
+    ],
+    answer: 'The three N are 0, 0, –1 (average = –1/3)'
+  },
+  {
+    q: 'Find the oxidation number of each carbon in CH<sub>2</sub>=CCl<sub>2</sub>.',
+    tag: 'Paper set · organic',
+    steps: [
+      'The C=C bond is between identical atoms ⇒ split equally ⇒ contributes 0 to each carbon.',
+      'CH₂ carbon: bonded to 2 H (each gives the C –1) ⇒ –2.',
+      'CCl₂ carbon: bonded to 2 Cl (each takes 1 from C) ⇒ +2.',
+    ],
+    answer: 'CH₂ carbon = –2, CCl₂ carbon = +2'
+  },
 ]
 
 // Practice pool for the oxidation-number detective game
@@ -240,4 +338,8 @@ export const gameCards = [
   { formula: 'CO',      element: 'C',  answer: 2 },
   { formula: 'CO₂',     element: 'C',  answer: 4 },
   { formula: 'CH₄',     element: 'C',  answer: -4 },
+  { formula: 'K₂S₂O₈',  element: 'S',  answer: 6 },
+  { formula: '(CH₃)₂SO', element: 'S', answer: 0 },
+  { formula: 'CrO₅',    element: 'Cr', answer: 6 },
+  { formula: 'OsO₄',    element: 'Os', answer: 8 },
 ]
